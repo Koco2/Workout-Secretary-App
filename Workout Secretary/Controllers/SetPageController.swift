@@ -12,6 +12,7 @@ class SetPageController: UITableViewController {
 
     
     let setCellId = "SetCell"
+    var item : UIBarButtonItem!
     var newsArray:[SetCell] = Array()
     
     override func viewDidLoad() {
@@ -24,10 +25,31 @@ class SetPageController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.tableView.register(SetCell.self, forCellReuseIdentifier: setCellId)
+        //self.setNav()
+        
     }
 
+    // MARK: - set Navi
     
+//    private func setNav(){
+//        item = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(rightButtonPressed))
+//
+//        self.navigationItem.rightBarButtonItem=item
+//
+//    }
+//
+//    @objc private func rightButtonPressed(){
+//        if tableView.isEditing == true {
+//            tableView.isEditing = false
+//        }
+//        else
+//        {
+//            tableView.isEditing = true
+//        }
+//
+//    }
 
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -56,27 +78,38 @@ class SetPageController: UITableViewController {
     }
     
     
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+            print("more button tapped")
+        }
+        delete.backgroundColor = UIColor.red
+        
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+            print("favorite button tapped")
+        }
+        edit.backgroundColor = UIColor.green
+        
+        
+        return [delete, edit]
+    }
+
+
+    
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+ 
 
-    /*
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
     }
-    */
+ 
 
     /*
     // Override to support rearranging the table view.

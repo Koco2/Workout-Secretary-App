@@ -12,7 +12,7 @@ import SnapKit
 class SetCell: UITableViewCell {
 
     var leftIcon: UIImageView!
-    var descri: UILabel!
+    var descri: UITextView!
     
     
     override func awakeFromNib() {
@@ -38,7 +38,13 @@ class SetCell: UITableViewCell {
         leftIcon.contentMode = UIView.ContentMode.scaleToFill
         self.addSubview(leftIcon)
         
-        descri = UILabel()
+        descri = UITextView()
+        descri.text = "lkasdjf;lkasjd;lkasdjf;lkasjd;lfkjaslkdjf;laksjdflkajsdl;knxmnvkjnalkurywuieyprioqweknciaheprivnw;bvibwiorpbnpoiebwfpuqnpeoberbpoiwnvpioqpbweuporbfqowueunqoiehpofiqnweopifnlkasdjf;lkasjd;lfkjaslkdjf;laksjdflkajsdl;knxmnvkjnalkurywuieyprioqweknciaheprivnw;bvibwiorpbnpoiebwfpuqnpeoberbpoiwnvpioqpbweuporbfqowueunqoiehpofiqnweopifnlfkjaslkdjf;laksjdflkajsdl;knxmnvkjnalkurywuieyprioqweknciaheprivnw;bvibwiorpbnpoiebwfpuqnpeoberbpoiwnvpioqpbweuporbfqowueunqoiehpofiqnweopifn"
+        descri.isScrollEnabled = false
+        descri.isEditable = false
+        descri.backgroundColor = UIColor.orange
+        self.addSubview(descri)
+        
         
     }
     
@@ -48,6 +54,14 @@ class SetCell: UITableViewCell {
             make.top.equalTo(10)
             make.bottom.equalTo(-10)
             make.height.width.equalTo(50)
+        }
+        
+        descri.snp.makeConstraints { (make) in
+            make.left.equalTo(leftIcon.snp_rightMargin).offset(20)
+            make.top.equalTo(10)
+            make.bottom.equalTo(-10)
+            make.height.equalTo(50)
+            make.right.equalTo(-10)
         }
     }
     
