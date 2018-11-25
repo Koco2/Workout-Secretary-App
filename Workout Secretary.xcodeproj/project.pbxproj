@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		665DD23521AA6E01001F6EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD23421AA6E01001F6EF4 /* AppDelegate.swift */; };
-		665DD23721AA6E01001F6EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD23621AA6E01001F6EF4 /* ViewController.swift */; };
 		665DD23A21AA6E01001F6EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665DD23821AA6E01001F6EF4 /* Main.storyboard */; };
 		665DD23D21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 665DD23B21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld */; };
 		665DD23F21AA6E04001F6EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665DD23E21AA6E04001F6EF4 /* Assets.xcassets */; };
 		665DD24221AA6E04001F6EF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665DD24021AA6E04001F6EF4 /* LaunchScreen.storyboard */; };
+		665DD24C21AA7105001F6EF4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD24B21AA7105001F6EF4 /* TabBarController.swift */; };
+		665DD24E21AA71F4001F6EF4 /* WorkoutPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD24D21AA71F4001F6EF4 /* WorkoutPageController.swift */; };
+		665DD25221AA726F001F6EF4 /* ThirdPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD25121AA726F001F6EF4 /* ThirdPageController.swift */; };
+		665DD25421AA727D001F6EF4 /* FourthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD25321AA727D001F6EF4 /* FourthPageViewController.swift */; };
+		665DD25C21AA7DFD001F6EF4 /* SetPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD25B21AA7DFD001F6EF4 /* SetPageController.swift */; };
+		665DD25E21AA7F2D001F6EF4 /* SetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD25D21AA7F2D001F6EF4 /* SetCell.swift */; };
+		665DD26121AA8167001F6EF4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 665DD26021AA8167001F6EF4 /* Default-568h@2x.png */; };
+		EDAB9418039B54BA70E763F2 /* Pods_Workout_Secretary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D39B23C0BB1582FA1569 /* Pods_Workout_Secretary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		665DD23121AA6E01001F6EF4 /* Workout Secretary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Secretary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665DD23421AA6E01001F6EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		665DD23621AA6E01001F6EF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		665DD23921AA6E01001F6EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		665DD23C21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Workout_Secretary.xcdatamodel; sourceTree = "<group>"; };
 		665DD23E21AA6E04001F6EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665DD24121AA6E04001F6EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665DD24321AA6E04001F6EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665DD24B21AA7105001F6EF4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		665DD24D21AA71F4001F6EF4 /* WorkoutPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPageController.swift; sourceTree = "<group>"; };
+		665DD25121AA726F001F6EF4 /* ThirdPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageController.swift; sourceTree = "<group>"; };
+		665DD25321AA727D001F6EF4 /* FourthPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthPageViewController.swift; sourceTree = "<group>"; };
+		665DD25B21AA7DFD001F6EF4 /* SetPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPageController.swift; sourceTree = "<group>"; };
+		665DD25D21AA7F2D001F6EF4 /* SetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCell.swift; sourceTree = "<group>"; };
+		665DD26021AA8167001F6EF4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CCE26F49C29A425E0D6CEF94 /* Pods-Workout Secretary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Secretary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Secretary/Pods-Workout Secretary.debug.xcconfig"; sourceTree = "<group>"; };
+		DEA7D39B23C0BB1582FA1569 /* Pods_Workout_Secretary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Secretary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF6D1D48C6F0DDE1ADDF81F /* Pods-Workout Secretary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Secretary.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Secretary/Pods-Workout Secretary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAB9418039B54BA70E763F2 /* Pods_Workout_Secretary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14E7A25831C35308A5A3FD54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE26F49C29A425E0D6CEF94 /* Pods-Workout Secretary.debug.xcconfig */,
+				FBF6D1D48C6F0DDE1ADDF81F /* Pods-Workout Secretary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DF88C7D3E68BA1EACC8E551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D39B23C0BB1582FA1569 /* Pods_Workout_Secretary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		665DD22821AA6E00001F6EF4 = {
 			isa = PBXGroup;
 			children = (
+				665DD26021AA8167001F6EF4 /* Default-568h@2x.png */,
 				665DD23321AA6E01001F6EF4 /* Workout Secretary */,
 				665DD23221AA6E01001F6EF4 /* Products */,
+				14E7A25831C35308A5A3FD54 /* Pods */,
+				3DF88C7D3E68BA1EACC8E551 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,44 @@
 		665DD23321AA6E01001F6EF4 /* Workout Secretary */ = {
 			isa = PBXGroup;
 			children = (
-				665DD23421AA6E01001F6EF4 /* AppDelegate.swift */,
-				665DD23621AA6E01001F6EF4 /* ViewController.swift */,
-				665DD23821AA6E01001F6EF4 /* Main.storyboard */,
-				665DD23E21AA6E04001F6EF4 /* Assets.xcassets */,
-				665DD24021AA6E04001F6EF4 /* LaunchScreen.storyboard */,
 				665DD24321AA6E04001F6EF4 /* Info.plist */,
-				665DD23B21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld */,
+				665DD25F21AA7F4E001F6EF4 /* Supporting files */,
+				665DD24A21AA701B001F6EF4 /* Controllers */,
+				665DD24921AA6FF6001F6EF4 /* Views */,
 			);
 			path = "Workout Secretary";
+			sourceTree = "<group>";
+		};
+		665DD24921AA6FF6001F6EF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				665DD25D21AA7F2D001F6EF4 /* SetCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		665DD24A21AA701B001F6EF4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				665DD23421AA6E01001F6EF4 /* AppDelegate.swift */,
+				665DD24B21AA7105001F6EF4 /* TabBarController.swift */,
+				665DD24D21AA71F4001F6EF4 /* WorkoutPageController.swift */,
+				665DD25B21AA7DFD001F6EF4 /* SetPageController.swift */,
+				665DD25121AA726F001F6EF4 /* ThirdPageController.swift */,
+				665DD25321AA727D001F6EF4 /* FourthPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		665DD25F21AA7F4E001F6EF4 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				665DD23821AA6E01001F6EF4 /* Main.storyboard */,
+				665DD24021AA6E04001F6EF4 /* LaunchScreen.storyboard */,
+				665DD23E21AA6E04001F6EF4 /* Assets.xcassets */,
+				665DD23B21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665DD24621AA6E04001F6EF4 /* Build configuration list for PBXNativeTarget "Workout Secretary" */;
 			buildPhases = (
+				0D82F474C4786A729FB5A60A /* [CP] Check Pods Manifest.lock */,
 				665DD22D21AA6E00001F6EF4 /* Sources */,
 				665DD22E21AA6E00001F6EF4 /* Frameworks */,
 				665DD22F21AA6E00001F6EF4 /* Resources */,
+				64BAFF5D2F9D4C629392AF61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				665DD24221AA6E04001F6EF4 /* LaunchScreen.storyboard in Resources */,
+				665DD26121AA8167001F6EF4 /* Default-568h@2x.png in Resources */,
 				665DD23F21AA6E04001F6EF4 /* Assets.xcassets in Resources */,
 				665DD23A21AA6E01001F6EF4 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +202,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D82F474C4786A729FB5A60A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Workout Secretary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64BAFF5D2F9D4C629392AF61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Workout Secretary/Pods-Workout Secretary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workout Secretary/Pods-Workout Secretary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		665DD22D21AA6E00001F6EF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				665DD23721AA6E01001F6EF4 /* ViewController.swift in Sources */,
+				665DD24C21AA7105001F6EF4 /* TabBarController.swift in Sources */,
+				665DD25C21AA7DFD001F6EF4 /* SetPageController.swift in Sources */,
+				665DD25221AA726F001F6EF4 /* ThirdPageController.swift in Sources */,
 				665DD23D21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld in Sources */,
+				665DD25E21AA7F2D001F6EF4 /* SetCell.swift in Sources */,
+				665DD24E21AA71F4001F6EF4 /* WorkoutPageController.swift in Sources */,
 				665DD23521AA6E01001F6EF4 /* AppDelegate.swift in Sources */,
+				665DD25421AA727D001F6EF4 /* FourthPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +397,7 @@
 		};
 		665DD24721AA6E04001F6EF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE26F49C29A425E0D6CEF94 /* Pods-Workout Secretary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +416,7 @@
 		};
 		665DD24821AA6E04001F6EF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF6D1D48C6F0DDE1ADDF81F /* Pods-Workout Secretary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
