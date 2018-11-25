@@ -46,6 +46,17 @@ class SetPageController: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.

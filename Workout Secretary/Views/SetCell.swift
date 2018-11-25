@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import SnapKit
 
 class SetCell: UITableViewCell {
 
+    var leftIcon: UIImageView!
+    var descri: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,10 +29,26 @@ class SetCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         //调用布局的方法
         self.setupViews()
+        self.addConstrain()
     }
     
-    func setupViews(){
+    private func setupViews(){
+        leftIcon = UIImageView()
+        leftIcon.image = UIImage(named: "img1")
+        leftIcon.contentMode = UIView.ContentMode.scaleToFill
+        self.addSubview(leftIcon)
         
+        descri = UILabel()
+        
+    }
+    
+    private func addConstrain(){
+        leftIcon.snp.makeConstraints { (make) in
+            make.left.equalTo(10)
+            make.top.equalTo(10)
+            make.bottom.equalTo(-10)
+            make.height.width.equalTo(50)
+        }
     }
     
     
