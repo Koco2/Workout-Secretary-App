@@ -12,8 +12,9 @@ class SetPageController: UITableViewController {
 
     
     let setCellId = "SetCell"
+    let AddSetCellId = "AddSetCell"
     var item : UIBarButtonItem!
-    var newsArray:[SetCell] = Array()
+    var SetArray:[SetCell] = Array()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,29 +26,16 @@ class SetPageController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.tableView.register(SetCell.self, forCellReuseIdentifier: setCellId)
-        //self.setNav()
+        self.tableView.register(AddSetCell.self, forCellReuseIdentifier: AddSetCellId)
+        self.editArray()
         
     }
 
-    // MARK: - set Navi
-    
-//    private func setNav(){
-//        item = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(rightButtonPressed))
-//
-//        self.navigationItem.rightBarButtonItem=item
-//
-//    }
-//
-//    @objc private func rightButtonPressed(){
-//        if tableView.isEditing == true {
-//            tableView.isEditing = false
-//        }
-//        else
-//        {
-//            tableView.isEditing = true
-//        }
-//
-//    }
+    func editArray(){
+        SetArray.append(SetCell())
+        SetArray.append(SetCell())
+        SetArray.append(SetCell())
+    }
 
     
     // MARK: - Table view data source
@@ -59,13 +47,18 @@ class SetPageController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return SetArray.count+1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: setCellId, for: indexPath)
-        return cell
+        let setCell = tableView.dequeueReusableCell(withIdentifier: setCellId, for: indexPath)
+        let addSetCell = tableView.dequeueReusableCell(withIdentifier: AddSetCellId, for: indexPath)
+        if(indexPath.row < SetArray.count){
+            return setCell
+        }
+        return addSetCell
+        
     }
     
     
@@ -89,8 +82,10 @@ class SetPageController: UITableViewController {
         }
         edit.backgroundColor = UIColor.green
         
-        
-        return [delete, edit]
+        if(indexPath.row < SetArray.count){
+            return [delete, edit]
+        }
+        return []
     }
 
 
