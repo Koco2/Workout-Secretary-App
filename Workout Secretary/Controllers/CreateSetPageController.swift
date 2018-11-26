@@ -1,33 +1,34 @@
 //
-//  SetPageController.swift
+//  CreateSetPageController.swift
 //  Workout Secretary
 //
-//  Created by Chen Wang on 11/24/18.
+//  Created by Chen Wang on 11/25/18.
 //  Copyright © 2018 utopia incubator. All rights reserved.
 //
 
 import UIKit
 
-class SetPageController: UITableViewController {
+class CreateSetPageController: UITableViewController {
 
     
     let setCellId = "SetCell"
     let AddSetCellId = "AddSetCell"
+    let SetTitleCellId = "SetTitleCell"
     var SetArray:[SetCell] = Array()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        self.tableView.register(SetCell.self, forCellReuseIdentifier: setCellId)
-        self.tableView.register(AddSetCell.self, forCellReuseIdentifier: AddSetCellId)
-        self.editArray()
-        
+        tableView.register(SetCell.self, forCellReuseIdentifier: setCellId)
+        tableView.register(AddSetCell.self, forCellReuseIdentifier: AddSetCellId)
+        tableView.register(SetTitleCell.self, forCellReuseIdentifier: SetTitleCellId)
+        editArray()
     }
 
     func editArray(){
@@ -35,25 +36,29 @@ class SetPageController: UITableViewController {
         SetArray.append(SetCell())
         SetArray.append(SetCell())
     }
-
     
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return SetArray.count+1
+        return SetArray.count+2
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let setCell = tableView.dequeueReusableCell(withIdentifier: setCellId, for: indexPath)
         let addSetCell = tableView.dequeueReusableCell(withIdentifier: AddSetCellId, for: indexPath)
-        if(indexPath.row < SetArray.count){
+        let setTitleCell = tableView.dequeueReusableCell(withIdentifier: SetTitleCellId, for: indexPath)
+    
+        if(indexPath.row == 0){
+            return setTitleCell
+        }
+        if(indexPath.row <= SetArray.count){
             return setCell
         }
         return addSetCell
@@ -78,18 +83,10 @@ class SetPageController: UITableViewController {
         }
         delete.backgroundColor = UIColor.red
         
-        if(indexPath.row < SetArray.count){
+        if(indexPath.row < SetArray.count && indexPath.row != 0){
             return [delete]
         }
         return []
-    }
-
-
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.row == SetArray.count){
-            print("nav to CreatePage")
-            self.navigationController?.pushViewController(CreateSetPageController(), animated: true)
-        }
     }
     
 

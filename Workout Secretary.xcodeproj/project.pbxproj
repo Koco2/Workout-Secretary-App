@@ -19,6 +19,9 @@
 		665DD25C21AA7DFD001F6EF4 /* SetPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD25B21AA7DFD001F6EF4 /* SetPageController.swift */; };
 		665DD25E21AA7F2D001F6EF4 /* SetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD25D21AA7F2D001F6EF4 /* SetCell.swift */; };
 		665DD26321AAA8A5001F6EF4 /* AddSetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD26221AAA8A5001F6EF4 /* AddSetCell.swift */; };
+		665DD26521AB6DF3001F6EF4 /* CreateSetPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD26421AB6DF3001F6EF4 /* CreateSetPageController.swift */; };
+		665DD26721AB80B7001F6EF4 /* SetTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD26621AB80B7001F6EF4 /* SetTitleCell.swift */; };
+		665DD26921AB8750001F6EF4 /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD26821AB8750001F6EF4 /* GlobalVar.swift */; };
 		EDAB9418039B54BA70E763F2 /* Pods_Workout_Secretary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D39B23C0BB1582FA1569 /* Pods_Workout_Secretary.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		665DD25B21AA7DFD001F6EF4 /* SetPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPageController.swift; sourceTree = "<group>"; };
 		665DD25D21AA7F2D001F6EF4 /* SetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCell.swift; sourceTree = "<group>"; };
 		665DD26221AAA8A5001F6EF4 /* AddSetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSetCell.swift; sourceTree = "<group>"; };
+		665DD26421AB6DF3001F6EF4 /* CreateSetPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSetPageController.swift; sourceTree = "<group>"; };
+		665DD26621AB80B7001F6EF4 /* SetTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTitleCell.swift; sourceTree = "<group>"; };
+		665DD26821AB8750001F6EF4 /* GlobalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVar.swift; sourceTree = "<group>"; };
 		CCE26F49C29A425E0D6CEF94 /* Pods-Workout Secretary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Secretary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Secretary/Pods-Workout Secretary.debug.xcconfig"; sourceTree = "<group>"; };
 		DEA7D39B23C0BB1582FA1569 /* Pods_Workout_Secretary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Secretary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF6D1D48C6F0DDE1ADDF81F /* Pods-Workout Secretary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Secretary.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Secretary/Pods-Workout Secretary.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 				665DD24321AA6E04001F6EF4 /* Info.plist */,
 				665DD24A21AA701B001F6EF4 /* Controllers */,
 				665DD24921AA6FF6001F6EF4 /* Views */,
+				665DD26A21AB8757001F6EF4 /* Model */,
 			);
 			path = "Workout Secretary";
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 			children = (
 				665DD25D21AA7F2D001F6EF4 /* SetCell.swift */,
 				665DD26221AAA8A5001F6EF4 /* AddSetCell.swift */,
+				665DD26621AB80B7001F6EF4 /* SetTitleCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				665DD25B21AA7DFD001F6EF4 /* SetPageController.swift */,
 				665DD25121AA726F001F6EF4 /* ThirdPageController.swift */,
 				665DD25321AA727D001F6EF4 /* FourthPageViewController.swift */,
+				665DD26421AB6DF3001F6EF4 /* CreateSetPageController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,6 +140,14 @@
 				665DD23B21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		665DD26A21AB8757001F6EF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				665DD26821AB8750001F6EF4 /* GlobalVar.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,12 +263,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				665DD24C21AA7105001F6EF4 /* TabBarController.swift in Sources */,
+				665DD26521AB6DF3001F6EF4 /* CreateSetPageController.swift in Sources */,
 				665DD25C21AA7DFD001F6EF4 /* SetPageController.swift in Sources */,
 				665DD25221AA726F001F6EF4 /* ThirdPageController.swift in Sources */,
+				665DD26921AB8750001F6EF4 /* GlobalVar.swift in Sources */,
 				665DD23D21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld in Sources */,
 				665DD25E21AA7F2D001F6EF4 /* SetCell.swift in Sources */,
 				665DD24E21AA71F4001F6EF4 /* WorkoutPageController.swift in Sources */,
 				665DD23521AA6E01001F6EF4 /* AppDelegate.swift in Sources */,
+				665DD26721AB80B7001F6EF4 /* SetTitleCell.swift in Sources */,
 				665DD25421AA727D001F6EF4 /* FourthPageViewController.swift in Sources */,
 				665DD26321AAA8A5001F6EF4 /* AddSetCell.swift in Sources */,
 			);

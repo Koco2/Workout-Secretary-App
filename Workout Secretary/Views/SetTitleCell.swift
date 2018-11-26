@@ -1,15 +1,14 @@
 //
-//  SetCell.swift
+//  SetTitleCell.swift
 //  Workout Secretary
 //
-//  Created by Chen Wang on 11/24/18.
+//  Created by Chen Wang on 11/25/18.
 //  Copyright © 2018 utopia incubator. All rights reserved.
 //
 
 import UIKit
-import SnapKit
 
-class SetCell: UITableViewCell {
+class SetTitleCell: UITableViewCell {
 
     var leftIcon: UIImageView!
     var descri: UILabel!
@@ -19,7 +18,7 @@ class SetCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
@@ -39,7 +38,7 @@ class SetCell: UITableViewCell {
         self.addSubview(leftIcon)
         
         descri = UILabel()
-        descri.text = "lkasdjf;lkasjd;lkasdjf;lkasjd;lfkjaslkdjf;laksjdflkajsdl;knxmnvkjnalkurywuieyprioqweknciaheprivnw;bvibwiorpbnpoiebwfpuqnpeoberbpoiwnvpioqpbweuporbfqowueunqoiehpofiqnweopifnlkasdjf;lkasjd;lfkjaslkdjf;laksjdflkajsdl;knxmnvkjnalkurywuieyprioqweknciaheprivnw;bvibwiorpbnpoiebwfpuqnpeoberbpoiwnvpioqpbweuporbfqowueunqoiehpofiqnweopifnlfkjaslkdjf;laksjdflkajsdl;knxmnvkjnalkurywuieyprioqweknciaheprivnw;bvibwiorpbnpoiebwfpuqnpeoberbpoiwnvpioqpbweuporbfqowueunqoiehpofiqnweopifn"
+        descri.text = "Title"
         descri.backgroundColor = UIColor.orange
         self.addSubview(descri)
         
@@ -48,18 +47,16 @@ class SetCell: UITableViewCell {
     
     private func addConstrain(){
         leftIcon.snp.makeConstraints { (make) in
-            make.left.equalTo(10)
+            make.centerX.equalTo(self.center.x)
             make.top.equalTo(10)
-            make.bottom.equalTo(-10)
             make.height.width.equalTo(50)
         }
         
         descri.snp.makeConstraints { (make) in
-            make.left.equalTo(leftIcon.snp_rightMargin).offset(20)
-            make.top.equalTo(10)
+            make.centerX.equalTo(self.center.x)
+            make.top.equalTo(70)
             make.bottom.equalTo(-10)
-            make.height.equalTo(50)
-            make.right.equalTo(-10)
+            make.height.width.equalTo(50)
         }
     }
     
@@ -67,4 +64,5 @@ class SetCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
 }
