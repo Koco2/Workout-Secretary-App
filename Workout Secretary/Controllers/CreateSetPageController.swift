@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class CreateSetPageController: UITableViewController {
 
@@ -14,7 +15,9 @@ class CreateSetPageController: UITableViewController {
     let setCellId = "SetCell"
     let AddSetCellId = "AddSetCell"
     let SetTitleCellId = "SetTitleCell"
+
     var SetArray:[SetCell] = Array()
+    var item: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +28,27 @@ class CreateSetPageController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        
         tableView.register(SetCell.self, forCellReuseIdentifier: setCellId)
         tableView.register(AddSetCell.self, forCellReuseIdentifier: AddSetCellId)
         tableView.register(SetTitleCell.self, forCellReuseIdentifier: SetTitleCellId)
         editArray()
+        addNavItem()
     }
 
-    func editArray(){
+    private func editArray(){
         SetArray.append(SetCell())
         SetArray.append(SetCell())
         SetArray.append(SetCell())
+    }
+    
+    private func addNavItem(){
+        item = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveButtonPressed))
+        self.navigationItem.rightBarButtonItem = item
+    }
+
+    @objc private func saveButtonPressed(){
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Table view data source
@@ -83,13 +97,17 @@ class CreateSetPageController: UITableViewController {
         }
         delete.backgroundColor = UIColor.red
         
-        if(indexPath.row < SetArray.count && indexPath.row != 0){
+        if(indexPath.row <= SetArray.count && indexPath.row != 0){
             return [delete]
         }
         return []
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.row == SetArray.count+1){
+            self.navigationController?.pushViewController(SelectionListController(), animated: true)
+        }
+    }
     
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

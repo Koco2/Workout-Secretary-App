@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662EFB8121B8EBE000BB965D /* WorkoutModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EFB8021B8EBE000BB965D /* WorkoutModeController.swift */; };
+		662EFB8321B8EDD300BB965D /* SelectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EFB8221B8EDD300BB965D /* SelectionListController.swift */; };
+		662EFB8521B8F47300BB965D /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EFB8421B8F47300BB965D /* IconCell.swift */; };
+		662EFB8921B8FACD00BB965D /* ChooseIconPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662EFB8821B8FACD00BB965D /* ChooseIconPageController.swift */; };
 		665DD23521AA6E01001F6EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665DD23421AA6E01001F6EF4 /* AppDelegate.swift */; };
 		665DD23A21AA6E01001F6EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665DD23821AA6E01001F6EF4 /* Main.storyboard */; };
 		665DD23D21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 665DD23B21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		662EFB8021B8EBE000BB965D /* WorkoutModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModeController.swift; sourceTree = "<group>"; };
+		662EFB8221B8EDD300BB965D /* SelectionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionListController.swift; sourceTree = "<group>"; };
+		662EFB8421B8F47300BB965D /* IconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		662EFB8821B8FACD00BB965D /* ChooseIconPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseIconPageController.swift; sourceTree = "<group>"; };
 		665DD23121AA6E01001F6EF4 /* Workout Secretary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Secretary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		665DD23421AA6E01001F6EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665DD23921AA6E01001F6EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +121,7 @@
 				665DD25D21AA7F2D001F6EF4 /* SetCell.swift */,
 				665DD26221AAA8A5001F6EF4 /* AddSetCell.swift */,
 				665DD26621AB80B7001F6EF4 /* SetTitleCell.swift */,
+				662EFB8421B8F47300BB965D /* IconCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +136,9 @@
 				665DD25121AA726F001F6EF4 /* ThirdPageController.swift */,
 				665DD25321AA727D001F6EF4 /* FourthPageViewController.swift */,
 				665DD26421AB6DF3001F6EF4 /* CreateSetPageController.swift */,
+				662EFB8021B8EBE000BB965D /* WorkoutModeController.swift */,
+				662EFB8221B8EDD300BB965D /* SelectionListController.swift */,
+				662EFB8821B8FACD00BB965D /* ChooseIconPageController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,8 +276,11 @@
 			files = (
 				665DD24C21AA7105001F6EF4 /* TabBarController.swift in Sources */,
 				665DD26521AB6DF3001F6EF4 /* CreateSetPageController.swift in Sources */,
+				662EFB8521B8F47300BB965D /* IconCell.swift in Sources */,
 				665DD25C21AA7DFD001F6EF4 /* SetPageController.swift in Sources */,
+				662EFB8921B8FACD00BB965D /* ChooseIconPageController.swift in Sources */,
 				665DD25221AA726F001F6EF4 /* ThirdPageController.swift in Sources */,
+				662EFB8121B8EBE000BB965D /* WorkoutModeController.swift in Sources */,
 				665DD26921AB8750001F6EF4 /* GlobalVar.swift in Sources */,
 				665DD23D21AA6E01001F6EF4 /* Workout_Secretary.xcdatamodeld in Sources */,
 				665DD25E21AA7F2D001F6EF4 /* SetCell.swift in Sources */,
@@ -273,6 +288,7 @@
 				665DD23521AA6E01001F6EF4 /* AppDelegate.swift in Sources */,
 				665DD26721AB80B7001F6EF4 /* SetTitleCell.swift in Sources */,
 				665DD25421AA727D001F6EF4 /* FourthPageViewController.swift in Sources */,
+				662EFB8321B8EDD300BB965D /* SelectionListController.swift in Sources */,
 				665DD26321AAA8A5001F6EF4 /* AddSetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

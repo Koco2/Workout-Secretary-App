@@ -10,8 +10,8 @@ import UIKit
 
 class SetTitleCell: UITableViewCell {
 
-    var leftIcon: UIImageView!
-    var descri: UILabel!
+    var topIcon: UIButton!
+    var setTitle: UILabel!
     
     
     override func awakeFromNib() {
@@ -32,27 +32,35 @@ class SetTitleCell: UITableViewCell {
     }
     
     private func setupViews(){
-        leftIcon = UIImageView()
-        leftIcon.image = UIImage(named: "img1")
-        leftIcon.contentMode = UIView.ContentMode.scaleToFill
-        self.addSubview(leftIcon)
+        topIcon = UIButton()
+        topIcon.setImage(UIImage(named: "img1"), for: .normal)
+        topIcon.contentMode = UIView.ContentMode.scaleToFill
+        topIcon.addTarget(self, action: #selector(topIconPressed), for: .touchUpInside)
+        self.addSubview(topIcon)
         
-        descri = UILabel()
-        descri.text = "Title"
-        descri.backgroundColor = UIColor.orange
-        self.addSubview(descri)
-        
-        
+        setTitle = UILabel()
+        setTitle.text = "Title"
+        setTitle.backgroundColor = UIColor.orange
+        self.addSubview(setTitle)
     }
     
+    @objc private func topIconPressed(){
+        print("topIconPressed")
+        if let parentVC = getFirstViewController(){
+            parentVC.navigationController?.pushViewController(ChooseIconPageController(), animated: true)
+        }
+    }
+    
+    
+    
     private func addConstrain(){
-        leftIcon.snp.makeConstraints { (make) in
+        topIcon.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.center.x)
             make.top.equalTo(10)
             make.height.width.equalTo(50)
         }
         
-        descri.snp.makeConstraints { (make) in
+        setTitle.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.center.x)
             make.top.equalTo(70)
             make.bottom.equalTo(-10)
@@ -64,5 +72,24 @@ class SetTitleCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+}
 
+
+extension UIView{
+    
+    func getFirstViewController()->UIViewController?{
+        
+        for view in sequence(first: self.superview, next: {$0?.superview}){
+            
+            if let responder = view?.next{
+                
+                if responder.isKind(of: UIViewController.self){
+                    
+                    return responder as? UIViewController
+                }
+            }
+        }
+        return nil
+    }
 }

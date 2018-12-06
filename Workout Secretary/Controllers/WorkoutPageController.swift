@@ -48,6 +48,7 @@ class WorkoutPageController: UIViewController {
     
     @objc private func startButtonTapped(){
         print("start tapped!")
+        self.navigationController?.pushViewController(WorkoutModeController(), animated: true)
     }
     
     
